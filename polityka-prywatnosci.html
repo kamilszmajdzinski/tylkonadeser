@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polityka Prywatności – Tylko na Deser</title>
+<meta name="description" content="Polityka prywatności domowej pracowni cukierniczej Tylko na Deser. Informacje o przetwarzaniu danych osobowych.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="uploads/logo_na_deser_use_web_emty_bg-04.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary:   #E16850;
+  --secondary: #E69A6F;
+  --accent:    #D888AF;
+  --tertiary:  #ECE1D0;
+  --bg:        #F5ECE1;
+  --light:     #FBF7F2;
+  --dark:      #3A2218;
+  --muted:     #9A7060;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Montserrat',sans-serif; background:var(--bg); color:var(--dark); font-weight:300; line-height:1.8; }
+
+/* ─── COOKIE BANNER ─── */
+.cookie-banner {
+  position:fixed; bottom:0; left:0; right:0; z-index:9000;
+  background:var(--light);
+  border-top:1px solid rgba(225,104,80,0.12);
+  box-shadow:0 -8px 40px rgba(58,34,24,0.1);
+  padding:20px 52px;
+  transform:translateY(110%);
+  transition:transform 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+.cookie-banner.visible { transform:translateY(0); }
+.cookie-inner {
+  max-width:1100px; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between; gap:28px;
+  flex-wrap:wrap;
+}
+.cookie-text p { font-size:13px; color:var(--muted); line-height:1.6; font-weight:300; }
+.cookie-text p.cookie-title { font-weight:600; color:var(--dark); font-size:13px; margin-bottom:3px; }
+.cookie-actions { display:flex; gap:10px; flex-shrink:0; }
+.cookie-btn {
+  font-family:'Montserrat',sans-serif;
+  font-size:10.5px; letter-spacing:0.16em; text-transform:uppercase; font-weight:600;
+  padding:11px 26px; border-radius:100px; cursor:pointer; transition:all .22s;
+}
+.cookie-accept {
+  background:var(--primary); color:white; border:none;
+  box-shadow:0 4px 16px rgba(225,104,80,0.28);
+}
+.cookie-accept:hover { background:var(--dark); transform:translateY(-1px); }
+.cookie-decline {
+  background:transparent; color:var(--muted);
+  border:1.5px solid rgba(154,112,96,0.3);
+}
+.cookie-decline:hover { border-color:var(--primary); color:var(--primary); }
+@media(max-width:700px) {
+  .cookie-banner { padding:20px 24px; }
+  .cookie-inner { flex-direction:column; gap:14px; }
+  .cookie-actions { width:100%; }
+  .cookie-btn { flex:1; text-align:center; }
+}
+
+/* NAV */
+nav {
+  position:sticky; top:0; z-index:100;
+  background:rgba(251,247,242,0.96); backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(225,104,80,0.08);
+  padding:0 52px; height:68px;
+  display:flex; align-items:center; justify-content:space-between;
+  box-shadow:0 4px 32px rgba(58,34,24,0.05);
+}
+.nav-brand { display:flex; align-items:center; gap:10px; text-decoration:none; }
+.nav-wordmark strong {
+  display:block; font-family:'Playfair Display',serif;
+  font-size:14px; font-weight:500; letter-spacing:0.05em;
+  text-transform:uppercase; color:var(--primary);
+}
+.nav-wordmark span {
+  display:block; font-size:9px; letter-spacing:0.2em;
+  text-transform:uppercase; font-weight:500; color:var(--muted);
+}
+.nav-back {
+  font-size:11px; letter-spacing:0.16em; text-transform:uppercase;
+  font-weight:500; color:var(--muted); text-decoration:none;
+  transition:color .2s;
+}
+.nav-back:hover { color:var(--primary); }
+
+/* CONTENT */
+.page-wrap {
+  max-width:760px; margin:0 auto;
+  padding:72px 48px 120px;
+}
+.page-eyebrow {
+  display:block; font-size:10px; letter-spacing:0.3em; text-transform:uppercase;
+  font-weight:600; color:var(--accent); margin-bottom:16px;
+}
+.page-title {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,46px); font-weight:500; line-height:1.1;
+  color:var(--dark); margin-bottom:12px;
+}
+.page-title em { font-style:italic; color:var(--primary); }
+.page-date {
+  font-size:12px; color:var(--muted); letter-spacing:0.1em;
+  margin-bottom:56px; display:block;
+}
+.page-divider {
+  width:40px; height:2px; background:var(--accent);
+  margin-bottom:56px; border-radius:2px;
+}
+
+h2 {
+  font-family:'Playfair Display',serif;
+  font-size:20px; font-weight:500; color:var(--dark);
+  margin:48px 0 14px;
+}
+h2:first-of-type { margin-top:0; }
+p { font-size:14.5px; color:var(--muted); margin-bottom:14px; }
+ul { margin:0 0 14px 22px; }
+ul li { font-size:14.5px; color:var(--muted); margin-bottom:6px; }
+a { color:var(--primary); text-decoration:underline; text-underline-offset:3px; }
+a:hover { color:var(--dark); }
+strong { font-weight:600; color:var(--dark); }
+
+.info-box {
+  background:var(--light); border-radius:20px;
+  border:1px solid rgba(225,104,80,0.1);
+  padding:28px 32px; margin:0 0 48px;
+}
+.info-box p { margin:0; font-size:14px; }
+.info-box p + p { margin-top:8px; }
+
+/* FOOTER */
+footer {
+  background:var(--dark); padding:48px 52px;
+  text-align:center;
+}
+.footer-copy { font-size:11px; color:rgba(255,255,255,0.25); letter-spacing:0.06em; }
+.footer-copy a { color:rgba(255,255,255,0.4); text-decoration:none; }
+.footer-copy a:hover { color:var(--secondary); }
+
+@media(max-width:640px){
+  nav { padding:0 20px; }
+  .page-wrap { padding:48px 24px 80px; }
+  footer { padding:40px 24px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-wordmark">
+      <strong>Tylko na Deser</strong>
+      <span>domowa pracownia cukiernicza</span>
+    </div>
+  </a>
+  <a href="index.html" class="nav-back">← Wróć do strony</a>
+</nav>
+
+<main class="page-wrap">
+
+  <span class="page-eyebrow">Dokument prawny</span>
+  <h1 class="page-title">Polityka <em>Prywatności</em></h1>
+  <span class="page-date">Ostatnia aktualizacja: 10 maja 2026</span>
+  <div class="page-divider"></div>
+
+  <div class="info-box">
+    <p><strong>Administrator danych osobowych:</strong><br>
+    Julia Polak, prowadząca działalność pod nazwą <strong>Tylko na Deser</strong></p>
+    <p><strong>Kontakt:</strong> <a href="mailto:kontakt@tylkonadeser.pl">kontakt@tylkonadeser.pl</a> &nbsp;·&nbsp; <a href="tel:+48669591519">+48 669 591 519</a></p>
+    <p><strong>Adres:</strong> Poznań, Polska</p>
+  </div>
+
+  <h2>1. Jakie dane zbieramy?</h2>
+  <p>Za pośrednictwem formularza kontaktowego na stronie zbieramy następujące dane osobowe:</p>
+  <ul>
+    <li>Imię i nazwisko</li>
+    <li>Adres e-mail</li>
+    <li>Numer telefonu (opcjonalnie)</li>
+    <li>Treść wiadomości dotyczącej zamówienia</li>
+  </ul>
+  <p>Dane są przekazywane wyłącznie dobrowolnie przez osobę wypełniającą formularz.</p>
+
+  <h2>2. W jakim celu przetwarzamy dane?</h2>
+  <p>Dane osobowe przetwarzamy wyłącznie w celu:</p>
+  <ul>
+    <li>odpowiedzi na zapytanie przesłane przez formularz kontaktowy,</li>
+    <li>realizacji zamówienia lub wyceny usługi cukierniczej,</li>
+    <li>kontaktu w sprawach związanych ze złożonym zamówieniem.</li>
+  </ul>
+  <p>Dane nie są wykorzystywane do celów marketingowych bez odrębnej zgody.</p>
+
+  <h2>3. Podstawa prawna przetwarzania</h2>
+  <p>Podstawą prawną przetwarzania Twoich danych jest:</p>
+  <ul>
+    <li><strong>Art. 6 ust. 1 lit. a RODO</strong> — zgoda wyrażona poprzez zaznaczenie checkboxa w formularzu kontaktowym,</li>
+    <li><strong>Art. 6 ust. 1 lit. b RODO</strong> — niezbędność do podjęcia działań przed zawarciem umowy (wycena zamówienia).</li>
+  </ul>
+
+  <h2>4. Jak długo przechowujemy dane?</h2>
+  <p>Dane osobowe są przechowywane przez okres niezbędny do obsługi zapytania, a następnie usuwane — nie dłużej niż <strong>12 miesięcy</strong> od ostatniego kontaktu, chyba że przepisy prawa wymagają dłuższego przechowywania (np. dokumentacja rachunkowa).</p>
+
+  <h2>5. Komu przekazujemy dane?</h2>
+  <p>Dane mogą być przekazywane wyłącznie podmiotom przetwarzającym dane w naszym imieniu, w tym:</p>
+  <ul>
+    <li><strong>FormSubmit.co</strong> — operator formularza kontaktowego, który przesyła wiadomość na adres e-mail administratora. Dane nie są przez nich przechowywane długoterminowo. Więcej: <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener">formsubmit.co/privacy</a>.</li>
+    <li><strong>Google LLC</strong> — dostawca czcionek Google Fonts, który może rejestrować adres IP użytkownika w związku z ładowaniem zasobów. Więcej: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+  </ul>
+  <p>Nie sprzedajemy ani nie udostępniamy danych osobowych innym podmiotom w celach komercyjnych.</p>
+
+  <h2>6. Twoje prawa</h2>
+  <p>Na podstawie RODO przysługują Ci następujące prawa:</p>
+  <ul>
+    <li><strong>Prawo dostępu</strong> — możesz zażądać informacji o tym, jakie dane przechowujemy,</li>
+    <li><strong>Prawo do sprostowania</strong> — możesz żądać poprawienia nieprawidłowych danych,</li>
+    <li><strong>Prawo do usunięcia</strong> — możesz zażądać usunięcia swoich danych („prawo do bycia zapomnianym"),</li>
+    <li><strong>Prawo do ograniczenia przetwarzania</strong> — możesz zażądać ograniczenia przetwarzania Twoich danych,</li>
+    <li><strong>Prawo do przenoszenia danych</strong> — możesz otrzymać swoje dane w ustrukturyzowanym formacie,</li>
+    <li><strong>Prawo do cofnięcia zgody</strong> — możesz w dowolnym momencie cofnąć udzieloną zgodę bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej cofnięciem.</li>
+  </ul>
+  <p>Aby skorzystać z powyższych praw, skontaktuj się mailowo: <a href="mailto:kontakt@tylkonadeser.pl">kontakt@tylkonadeser.pl</a>.</p>
+  <p>Przysługuje Ci również prawo wniesienia skargi do organu nadzorczego — <strong>Prezesa Urzędu Ochrony Danych Osobowych (UODO)</strong>, ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a>.</p>
+
+  <h2>7. Pliki cookies</h2>
+  <p>Strona <strong>www.tylkonadeser.pl</strong> korzysta z plików cookies wyłącznie po uzyskaniu Twojej zgody. Używamy następujących kategorii cookies:</p>
+  <ul>
+    <li><strong>Niezbędne</strong> — pliki sesyjne operatora formularza (FormSubmit.co) niezbędne do działania formularza kontaktowego. Nie wymagają zgody.</li>
+    <li><strong>Analityczne</strong> — pliki Google Analytics (GA4), aktywowane wyłącznie po wyrażeniu zgody. Zbierają anonimowe dane o ruchu (liczba odwiedzin, źródła, czas na stronie). Nie identyfikują Cię osobiście.</li>
+  </ul>
+  <p>Możesz zarządzać zgodą w dowolnym momencie, czyszcząc dane localStorage w ustawieniach przeglądarki lub kontaktując się z nami. Możesz też zablokować cookies w ustawieniach przeglądarki — nie wpłynie to na działanie strony.</p>
+
+  <h2>8. Bezpieczeństwo danych</h2>
+  <p>Stosujemy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieuprawnionym dostępem, utratą lub zniszczeniem. Komunikacja odbywa się za pośrednictwem szyfrowanego połączenia HTTPS.</p>
+
+  <h2>9. Zmiany w polityce prywatności</h2>
+  <p>Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. O wszelkich istotnych zmianach poinformujemy poprzez aktualizację daty na górze dokumentu. Zachęcamy do regularnego zapoznawania się z treścią polityki.</p>
+
+  <h2>10. Kontakt</h2>
+  <p>W razie pytań dotyczących przetwarzania Twoich danych osobowych, skontaktuj się z nami:</p>
+  <ul>
+    <li>E-mail: <a href="mailto:kontakt@tylkonadeser.pl">kontakt@tylkonadeser.pl</a></li>
+    <li>Telefon: <a href="tel:+48669591519">+48 669 591 519</a></li>
+  </ul>
+
+</main>
+
+<footer>
+  <p class="footer-copy">© <span id="footerYear"></span> Tylko na Deser &nbsp;·&nbsp; <a href="index.html">Strona główna</a> &nbsp;·&nbsp; Polityka Prywatności</p>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Informacja o plikach cookies">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <p class="cookie-title">Ta strona używa plików cookies</p>
+      <p>Używamy Google Analytics do analizy ruchu. Dane są anonimizowane i nie są sprzedawane.</p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-decline" id="cookieDecline">Tylko niezbędne</button>
+      <button class="cookie-btn cookie-accept" id="cookieAccept">Akceptuję wszystkie</button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+(function() {
+  const KEY    = 'tnd_consent';
+  const banner = document.getElementById('cookieBanner');
+
+  function loadGA() {
+    if (document.getElementById('ga-script')) return;
+    const s = document.createElement('script');
+    s.id    = 'ga-script';
+    s.async = true;
+    s.src   = 'https://www.googletagmanager.com/gtag/js?id=G-9B9Z6LRLRN';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-9B9Z6LRLRN');
+  }
+
+  function hideBanner() {
+    banner.style.transform = 'translateY(110%)';
+    setTimeout(() => banner.remove(), 450);
+  }
+
+  const consent = localStorage.getItem(KEY);
+  if (consent === 'accepted') { loadGA(); banner.remove(); }
+  else if (consent === 'declined') { banner.remove(); }
+  else { setTimeout(() => banner.classList.add('visible'), 700); }
+
+  document.getElementById('cookieAccept').addEventListener('click', () => {
+    localStorage.setItem(KEY, 'accepted');
+    loadGA();
+    hideBanner();
+  });
+  document.getElementById('cookieDecline').addEventListener('click', () => {
+    localStorage.setItem(KEY, 'declined');
+    hideBanner();
+  });
+})();
+</script>
+</body>
+</html>
