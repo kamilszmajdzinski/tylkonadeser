@@ -1,0 +1,11 @@
+{
+  "name": "tylkonadeser",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"*.html\" \"uploads/**\" \"gallery/**\" --no-notify --no-open --port 3000"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
